@@ -1,0 +1,613 @@
+* {
+    overflow-x: hidden;
+}
+
+.profile_img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+/* SIGNUP CSS */
+
+.signup_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.104);
+    color: white;
+    overflow-y: hidden;
+}
+
+.signup_cont {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 30rem;
+    overflow-y: hidden;
+}
+
+.signup_input {
+    width: 100%;
+    height: 5vh;
+    padding: 2%;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+
+}
+
+.signup_file {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.signup_file_lable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(0, 149, 255, 0.325);
+    margin-bottom: 5%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(0, 149, 255, 0.325);
+    cursor: pointer;
+}
+
+
+/* NAVBAR CSS */
+
+.nav_container {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.5);
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    z-index: 10;
+}
+
+.nav_logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    color: rgb(0, 115, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search_suggestion {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 0vh;
+    margin-left: -5vw;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+.nav_links {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.links_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links_icons>div {
+    font-size: 10px;
+}
+
+/* UPLOAD */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*------------------HOME------------------------- */
+.home {
+
+    margin-top: 10vh;
+    width: 100%;
+    height: 90vh;
+    background-color: red;
+}
+
+/* ------------------USERS------------------------- */
+
+.users {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30vw;
+    background-color: black;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+/* ------------------chatBox------------------------ */
+
+.chat_users {
+    color: blue;
+    position: absolute;
+    top: 15vh;
+}
+
+.chatBox {
+    margin: auto;
+    margin-top: 10vh;
+    width: 70vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.021);
+    overflow-y: hidden;
+}
+
+.go_back {
+    color: blue;
+    position: absolute;
+    top: 5vh;
+    cursor: pointer;
+}
+
+.message_cont {
+    display: flex;
+    height: 15%;
+}
+
+.message_cont>input {
+    height: 2vh;
+    flex: 1;
+    padding: 10.9px;
+    border: none;
+    outline: none
+}
+
+.message_cont>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.9vh;
+    flex: 0.2;
+    color: rgb(0, 128, 255);
+    background-color: white;
+    cursor: pointer;
+}
+
+.messageform {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+
+}
+
+.messages_box {
+    height: 95%;
+    overflow-y: scroll;
+    background-color: rgba(18, 18, 18, 0.885);
+    border-left: 3px solid white;
+}
+
+
+/*----------- FEED CSS--------------------- */
+
+.feed {
+    display: flex;
+    margin-top: 10vh;
+}
+
+.feed_singlepost {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin-left: 19vw;
+}
+
+.follow_suggestion {
+    width: 30rem;
+    height: 20rem;
+    margin-top: 5vh;
+    margin-left: 56vw;
+    position: fixed;
+}
+
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.784);
+    top: 0vh;
+    left: 0;
+    overflow: hidden;
+}
+
+.postInfo_cancel_btn {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 1vh;
+    left: 2vh;
+    cursor: pointer;
+}
+
+.postInfo_cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: white;
+}
+
+.postInfo_img {
+    width: 40rem;
+    height: 50rem;
+    overflow: hidden;
+}
+
+.postInfo_footer {
+    width: 40rem;
+    height: 50rem;
+    overflow: hidden;
+    color: white;
+}
+
+.postInfo_comments_cont {
+    display: flex;
+    bottom: 0px;
+    color: white;
+}
+
+/*----------- UPLOAD CSS--------------------- */
+
+.upload_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+    margin-top: 10vh;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------SinglePost CSS---------------- */
+
+.singlepost_cont {
+    width: 30rem;
+    height: 50rem;
+    background-color: rgb(255, 249, 249);
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.singlepost_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.953);
+    color: white;
+}
+
+.singlepost_img {
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+    overflow-y: hidden;
+}
+
+.singlepost_footer {
+    width: 100%;
+    height: 25%;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.953);
+}
+
+.footer_comment_sec {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+
+.comments_box {
+    height: 75%;
+    overflow-y: scroll;
+
+}
+
+.comments_cont {
+    display: flex;
+    height: 25%;
+    overflow: hidden;
+}
+
+.comments_cont>input {
+    height: 2vh;
+    flex: 1;
+    padding: 11px;
+    border: none;
+    outline: none
+}
+
+.comments_cont>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.9vh;
+    flex: 0.2;
+    color: rgb(0, 128, 255);
+    background-color: white;
+    cursor: context-menu;
+}
+
+.profile {
+    display: flex;
+    margin-top: 15vh;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile_image {
+    margin-left: 10px;
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.profile_userInfo {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    align-items: center;
+}
+
+.profile_dashboard {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+.profile_dashboard>div {
+    display: flex;
+    cursor: pointer;
+}
+
+.users_list {
+    width: 90vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.034);
+    color: white;
+}
+
+.cancel_btn {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 10vh;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.579);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+}
+
+/* ----------------RESPNSIVE/MEDIA QUERIES------------------------- */
+
+@media(max-width: 1220px) {
+    .follow_suggestion {
+        width: 20rem;
+        height: 20rem;
+        margin-left: 55vw;
+    }
+
+    .feed_singlepost {
+        margin-left: 5vw;
+    }
+}
+
+@media(max-width: 1000px) {
+    .follow_suggestion {
+        width: 20rem;
+        height: 20rem;
+        margin-left: 56vw;
+    }
+
+    .feed_singlepost {
+        margin-left: 3vw;
+    }
+
+    .singlepost_cont {
+        width: 25rem;
+        height: 50rem;
+    }
+
+
+}
+
+@media(max-width: 750px) {
+    .feed {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feed_singlepost {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin-left: 0vw;
+    }
+
+
+    .follow_suggestion {
+        width: 55vw;
+        height: 20rem;
+        margin: 1%;
+        position: static;
+    }
+}
+
+@media(max-width: 500px) {
+    * {
+        font-size: 96%;
+    }
+
+    .signup_cont {
+        width: 80%;
+        height: 100%;
+    }
+
+    .nav_menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .links_icons>div {
+        font-size: 0px;
+    }
+
+    .home {
+        overflow-x: hidden;
+    }
+
+    .singlepost_cont {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .feed {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feed_singlepost {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin-left: 0vw;
+    }
+
+
+    .follow_suggestion {
+        width: 80vw;
+        height: 20rem;
+        margin: 1%;
+        position: static;
+    }
+
+    .search_suggestion {
+        width: 70vw;
+        height: 40vh;
+    }
+}
